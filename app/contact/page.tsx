@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
+import { siteConfig } from "@/lib/site";
+export const metadata: Metadata = { title: "Contact", description: "Contact the Bytecraft editorial team with a question, correction, or collaboration idea.", alternates: { canonical: "/contact" } };
+export default function ContactPage() { return <>
+  <section className="page-hero"><div className="container"><p className="section-kicker"><span className="small-symbol">✳</span> SAY HELLO</p><h1>Have a question?<br/><em>Let&apos;s talk.</em></h1><p>Spotted an issue in a tutorial, have an idea, or just want to say hi? We&apos;d like to hear from you.</p><div className="page-hero-rule"/></div></section>
+  <section className="container prose-page contact-content"><div className="contact-card"><span className="contact-icon"><Mail size={28}/></span><h2>Send us an email</h2><p>For corrections, collaboration requests, or general questions, reach us directly.</p><a href={`mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("Hello from Bytecraft")}`} className="button button-dark">Open email app <ArrowUpRight size={18}/></a><p className="email-address">{siteConfig.contactEmail}</p></div><div className="contact-card contact-card-alt"><span className="contact-icon"><MessageCircle size={28}/></span><h2>Editorial feedback</h2><p>If something seems incorrect or outdated, please include the article link, the relevant section, and what needs improvement. It helps us respond faster.</p><p className="small-note">We do not offer an account system or store contact form submissions on this website.</p></div></section>
+</>; }

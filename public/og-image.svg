@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#172223"/>
+  <circle cx="1010" cy="140" r="260" fill="#bff97d" opacity=".1"/>
+  <circle cx="1080" cy="470" r="200" fill="#bff97d" opacity=".08"/>
+  <path d="M770 150L930 315 770 480" stroke="#bff97d" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="245" font-family="Arial,sans-serif" font-size="85" font-weight="800" fill="#bff97d">bytecraft.</text>
+  <text x="90" y="350" font-family="Arial,sans-serif" font-size="52" font-weight="700" fill="#ffffff">Build smarter.</text>
+  <text x="90" y="420" font-family="Arial,sans-serif" font-size="52" font-weight="700" fill="#ffffff">Stay curious.</text>
+  <text x="90" y="520" font-family="Arial,sans-serif" font-size="24" fill="#afbbbb">PROGRAMMING  /  WEB  /  DEVOPS  /  AI</text>
+</svg>

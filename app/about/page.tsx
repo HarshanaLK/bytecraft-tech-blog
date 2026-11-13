@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight, BookOpen, Code2, Compass, Zap } from "lucide-react";
+
+export const metadata: Metadata = { title: "About", description: "Why Bytecraft exists and how we approach practical developer education.", alternates: { canonical: "/about" } };
+
+export default function About() { return <>
+  <section className="page-hero"><div className="container"><p className="section-kicker"><span className="small-symbol">✳</span> NICE TO MEET YOU</p><h1>Technology is complex.<br/><em>Learning it shouldn&apos;t be.</em></h1><p>We believe the best way to understand technology is to make something with it.</p><div className="page-hero-rule"/></div></section>
+  <section className="container prose-page about-intro"><div className="large-intro"><p>Bytecraft is an independent tech publication built around a simple idea: <strong>good explanations make great builders.</strong></p><p>Our tutorials cover practical software development, while our original news section offers context on current technology updates. All news articles are selected, written, and published by the site owner.</p><p>We aim to write clearly, verify examples before publication, and update information when tools change.</p></div><div className="value-grid"><div><BookOpen size={26}/><h3>Clarity over complexity</h3><p>Simple language, useful examples, and explanations that respect your time.</p></div><div><Code2 size={26}/><h3>Build while learning</h3><p>Concepts are most valuable when you can actually put them into practice.</p></div><div><Compass size={26}/><h3>Keep asking why</h3><p>We look beyond the syntax to explore the decisions and tradeoffs behind it.</p></div><div><Zap size={26}/><h3>Always improving</h3><p>Technology evolves, and so should the way we share what we learn.</p></div></div><div className="about-action"><h2>Want to learn something today?</h2><Link className="button button-dark" href="/blog">Explore the blog <ArrowUpRight size={18}/></Link></div></section>
+</>; }
